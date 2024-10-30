@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ede606470962af7ace4296c150e8bee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ede606470962af7ace4296c150e8bee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ede606470962af7ace4296c150e8bee = L.map(
+                "map_4ede606470962af7ace4296c150e8bee",
+                {
+                    center: [-31.9523, 115.8613],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_250856a98f1d73f210a91ad4c2eee241 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_250856a98f1d73f210a91ad4c2eee241.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var marker_e930f6bdb627a1a86b59fa86bfbe4b8c = L.marker(
+                [-31.9523, 115.8613],
+                {}
+            ).addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var icon_0a4a15aa03e9cba292341aa72da5bf6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e930f6bdb627a1a86b59fa86bfbe4b8c.setIcon(icon_0a4a15aa03e9cba292341aa72da5bf6f);
+        
+    
+        var popup_71d399bce4b2c6398714a360b3be2431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6043720a85f8ee29072f1c6caa0a197 = $(`<div id="html_a6043720a85f8ee29072f1c6caa0a197" style="width: 100.0%; height: 100.0%;">Depot</div>`)[0];
+                popup_71d399bce4b2c6398714a360b3be2431.setContent(html_a6043720a85f8ee29072f1c6caa0a197);
+            
+        
+
+        marker_e930f6bdb627a1a86b59fa86bfbe4b8c.bindPopup(popup_71d399bce4b2c6398714a360b3be2431)
+        ;
+
+        
+    
+    
+            var feature_group_7b295a05bc174d990670e90408787988 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_7ac73d30beee51c0836506a96c1a52fe = L.marker(
+                [-32.0547, 115.9075],
+                {}
+            ).addTo(feature_group_7b295a05bc174d990670e90408787988);
+        
+    
+            var icon_ad3ca20adcc211aff86bf58f32ac7fd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ac73d30beee51c0836506a96c1a52fe.setIcon(icon_ad3ca20adcc211aff86bf58f32ac7fd4);
+        
+    
+        var popup_cbca9d4c3301b60ac466e5adf68aee32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98dd478b31e07631c8bb475ae19dcbce = $(`<div id="html_98dd478b31e07631c8bb475ae19dcbce" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 9</b><br>                     Demand: 200<br>                     Priority: 2<br>                     Time Windows:<br>Window 1: 18:19 - 20:19                 </div>                 </div>`)[0];
+                popup_cbca9d4c3301b60ac466e5adf68aee32.setContent(html_98dd478b31e07631c8bb475ae19dcbce);
+            
+        
+
+        marker_7ac73d30beee51c0836506a96c1a52fe.bindPopup(popup_cbca9d4c3301b60ac466e5adf68aee32)
+        ;
+
+        
+    
+    
+            var poly_line_f091a07a3d6d466516b73deeb28f0258 = L.polyline(
+                [[-31.9523, 115.8613], [-32.0547, 115.9075], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7b295a05bc174d990670e90408787988);
+        
+    
+        var popup_3a5941ae1c7726891e576f9e3669e4e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d92efa0d0b78c70196393e7b0408184 = $(`<div id="html_9d92efa0d0b78c70196393e7b0408184" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 0</b><br>                 Distance: 61.78 km<br>                 Customers: 1<br>                 Total Demand: 200             </div>             </div>`)[0];
+                popup_3a5941ae1c7726891e576f9e3669e4e2.setContent(html_9d92efa0d0b78c70196393e7b0408184);
+            
+        
+
+        poly_line_f091a07a3d6d466516b73deeb28f0258.bindPopup(popup_3a5941ae1c7726891e576f9e3669e4e2)
+        ;
+
+        
+    
+    
+            feature_group_7b295a05bc174d990670e90408787988.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var feature_group_096b33d261d6e128226ca3b8b79e1246 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_b6fc9a750fc001cbfcc2d0f3621b919d = L.marker(
+                [-32.0569, 115.7439],
+                {}
+            ).addTo(feature_group_096b33d261d6e128226ca3b8b79e1246);
+        
+    
+            var icon_5ed73c2fc7eaf257c181157fe2851670 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6fc9a750fc001cbfcc2d0f3621b919d.setIcon(icon_5ed73c2fc7eaf257c181157fe2851670);
+        
+    
+        var popup_3ac0e8ae56a8909a744a0063d23d9342 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_31e1d100eab81d53d74e96cc356c130f = $(`<div id="html_31e1d100eab81d53d74e96cc356c130f" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 1</b><br>                     Demand: 200<br>                     Priority: 1<br>                     Time Windows:<br>Window 1: 18:19 - 20:19                 </div>                 </div>`)[0];
+                popup_3ac0e8ae56a8909a744a0063d23d9342.setContent(html_31e1d100eab81d53d74e96cc356c130f);
+            
+        
+
+        marker_b6fc9a750fc001cbfcc2d0f3621b919d.bindPopup(popup_3ac0e8ae56a8909a744a0063d23d9342)
+        ;
+
+        
+    
+    
+            var poly_line_d5a22a9d47610a3c4913b30e8ba9bdd7 = L.polyline(
+                [[-31.9523, 115.8613], [-32.0569, 115.7439], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#00FF00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#00FF00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_096b33d261d6e128226ca3b8b79e1246);
+        
+    
+        var popup_bc08675c622ef11180a496e79e227b52 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_559d71541aec4e9a65111d9070b4b7fb = $(`<div id="html_559d71541aec4e9a65111d9070b4b7fb" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 1</b><br>                 Distance: 42.27 km<br>                 Customers: 1<br>                 Total Demand: 200             </div>             </div>`)[0];
+                popup_bc08675c622ef11180a496e79e227b52.setContent(html_559d71541aec4e9a65111d9070b4b7fb);
+            
+        
+
+        poly_line_d5a22a9d47610a3c4913b30e8ba9bdd7.bindPopup(popup_bc08675c622ef11180a496e79e227b52)
+        ;
+
+        
+    
+    
+            feature_group_096b33d261d6e128226ca3b8b79e1246.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var feature_group_e0f1c8968348185c99cfa80032379f1c = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_9479d5f1c5caf3c0a1ca04833bdbb077 = L.marker(
+                [-31.8943, 115.7505],
+                {}
+            ).addTo(feature_group_e0f1c8968348185c99cfa80032379f1c);
+        
+    
+            var icon_4571e39333a4b0864e9f622b6840c60d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9479d5f1c5caf3c0a1ca04833bdbb077.setIcon(icon_4571e39333a4b0864e9f622b6840c60d);
+        
+    
+        var popup_f8dba7136bbb21b5a173164d36b3d9d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ce1b870ca3f2042791b3fe82b774752 = $(`<div id="html_5ce1b870ca3f2042791b3fe82b774752" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 2</b><br>                     Demand: 250<br>                     Priority: 1<br>                     Time Windows:<br>Window 1: 19:19 - 22:19                 </div>                 </div>`)[0];
+                popup_f8dba7136bbb21b5a173164d36b3d9d2.setContent(html_5ce1b870ca3f2042791b3fe82b774752);
+            
+        
+
+        marker_9479d5f1c5caf3c0a1ca04833bdbb077.bindPopup(popup_f8dba7136bbb21b5a173164d36b3d9d2)
+        ;
+
+        
+    
+    
+            var poly_line_ac7145519e7440ae0ce98ba493952961 = L.polyline(
+                [[-31.9523, 115.8613], [-31.8943, 115.7505], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0000FF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_e0f1c8968348185c99cfa80032379f1c);
+        
+    
+        var popup_3ec0cc744b8033892ac2a3b5de167e73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_658d0f3acb3141360c0e93f120402d4f = $(`<div id="html_658d0f3acb3141360c0e93f120402d4f" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 2</b><br>                 Distance: 62.55 km<br>                 Customers: 1<br>                 Total Demand: 250             </div>             </div>`)[0];
+                popup_3ec0cc744b8033892ac2a3b5de167e73.setContent(html_658d0f3acb3141360c0e93f120402d4f);
+            
+        
+
+        poly_line_ac7145519e7440ae0ce98ba493952961.bindPopup(popup_3ec0cc744b8033892ac2a3b5de167e73)
+        ;
+
+        
+    
+    
+            feature_group_e0f1c8968348185c99cfa80032379f1c.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var feature_group_5422183cb9a948b1d779c0ee85959817 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_f03ea5ce41ccb1cd971b16727c079247 = L.marker(
+                [-31.8915, 116.001],
+                {}
+            ).addTo(feature_group_5422183cb9a948b1d779c0ee85959817);
+        
+    
+            var icon_e6932cd11de9fc75667a38fa9cb0f131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f03ea5ce41ccb1cd971b16727c079247.setIcon(icon_e6932cd11de9fc75667a38fa9cb0f131);
+        
+    
+        var popup_d4cfee58fc2d026cd10d87be5c867951 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3df598fe4afe63010b4435de5a25ed20 = $(`<div id="html_3df598fe4afe63010b4435de5a25ed20" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 3</b><br>                     Demand: 300<br>                     Priority: 2<br>                     Time Windows:<br>Window 1: 17:19 - 21:19                 </div>                 </div>`)[0];
+                popup_d4cfee58fc2d026cd10d87be5c867951.setContent(html_3df598fe4afe63010b4435de5a25ed20);
+            
+        
+
+        marker_f03ea5ce41ccb1cd971b16727c079247.bindPopup(popup_d4cfee58fc2d026cd10d87be5c867951)
+        ;
+
+        
+    
+    
+            var poly_line_f2d2a007b6eb59bc5941800229a44287 = L.polyline(
+                [[-31.9523, 115.8613], [-31.8915, 116.001], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#FFFF00", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FFFF00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_5422183cb9a948b1d779c0ee85959817);
+        
+    
+        var popup_61d528746be07d784a63d1e4ba51c470 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_456d02d0e6821d8a2c6323d01c883f55 = $(`<div id="html_456d02d0e6821d8a2c6323d01c883f55" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 3</b><br>                 Distance: 42.19 km<br>                 Customers: 1<br>                 Total Demand: 300             </div>             </div>`)[0];
+                popup_61d528746be07d784a63d1e4ba51c470.setContent(html_456d02d0e6821d8a2c6323d01c883f55);
+            
+        
+
+        poly_line_f2d2a007b6eb59bc5941800229a44287.bindPopup(popup_61d528746be07d784a63d1e4ba51c470)
+        ;
+
+        
+    
+    
+            feature_group_5422183cb9a948b1d779c0ee85959817.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var feature_group_0d2a4e92ce8a861e1415e8abe43d879d = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_0300db29cf22c896c2e851db1b096045 = L.marker(
+                [-31.9714, 115.8971],
+                {}
+            ).addTo(feature_group_0d2a4e92ce8a861e1415e8abe43d879d);
+        
+    
+            var icon_92b71b57d34d3a7e12fb1b8e1e37e76d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0300db29cf22c896c2e851db1b096045.setIcon(icon_92b71b57d34d3a7e12fb1b8e1e37e76d);
+        
+    
+        var popup_effccd0e20d97b6e2696e02337bc4168 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_09f4924a478ae65e5fb1074c97f0da9e = $(`<div id="html_09f4924a478ae65e5fb1074c97f0da9e" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 6</b><br>                     Demand: 250<br>                     Priority: 2<br>                     Time Windows:<br>Window 1: 19:19 - 22:19                 </div>                 </div>`)[0];
+                popup_effccd0e20d97b6e2696e02337bc4168.setContent(html_09f4924a478ae65e5fb1074c97f0da9e);
+            
+        
+
+        marker_0300db29cf22c896c2e851db1b096045.bindPopup(popup_effccd0e20d97b6e2696e02337bc4168)
+        ;
+
+        
+    
+    
+            var poly_line_4677370b3ed32e173cdafcc86ecf9ba6 = L.polyline(
+                [[-31.9523, 115.8613], [-31.9714, 115.8971], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#FF00FF", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF00FF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_0d2a4e92ce8a861e1415e8abe43d879d);
+        
+    
+        var popup_faa3932771b0ef22be5f95fecd43876d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_08be2320fb53743a421ab0579a68c156 = $(`<div id="html_08be2320fb53743a421ab0579a68c156" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 4</b><br>                 Distance: 16.24 km<br>                 Customers: 1<br>                 Total Demand: 250             </div>             </div>`)[0];
+                popup_faa3932771b0ef22be5f95fecd43876d.setContent(html_08be2320fb53743a421ab0579a68c156);
+            
+        
+
+        poly_line_4677370b3ed32e173cdafcc86ecf9ba6.bindPopup(popup_faa3932771b0ef22be5f95fecd43876d)
+        ;
+
+        
+    
+    
+            feature_group_0d2a4e92ce8a861e1415e8abe43d879d.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var feature_group_fef36fa3e4b32d7e6f2d8e56edbdbb95 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_29afb65851e07e9467d748bd296d2598 = L.marker(
+                [-31.9433, 115.9169],
+                {}
+            ).addTo(feature_group_fef36fa3e4b32d7e6f2d8e56edbdbb95);
+        
+    
+            var icon_a61a500b1cab5eb5391956501c98a36b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29afb65851e07e9467d748bd296d2598.setIcon(icon_a61a500b1cab5eb5391956501c98a36b);
+        
+    
+        var popup_e494808e5adde219bcddd6ae60e5262d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87c13bcb0db64f3da490e736690a1bb8 = $(`<div id="html_87c13bcb0db64f3da490e736690a1bb8" style="width: 100.0%; height: 100.0%;">                 <div style='font-family: Arial'>                     <b>Customer 8</b><br>                     Demand: 150<br>                     Priority: 1<br>                     Time Windows:<br>Window 1: 17:19 - 19:19                 </div>                 </div>`)[0];
+                popup_e494808e5adde219bcddd6ae60e5262d.setContent(html_87c13bcb0db64f3da490e736690a1bb8);
+            
+        
+
+        marker_29afb65851e07e9467d748bd296d2598.bindPopup(popup_e494808e5adde219bcddd6ae60e5262d)
+        ;
+
+        
+    
+    
+            var poly_line_a24cd6aff7f4585a55cb50f1babe5352 = L.polyline(
+                [[-31.9523, 115.8613], [-31.9433, 115.9169], [-31.9523, 115.8613]],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_fef36fa3e4b32d7e6f2d8e56edbdbb95);
+        
+    
+        var popup_d8ef62e121e8230db12ae8e9cc8b3b00 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_539f85f3f2db759d758b10ae344883da = $(`<div id="html_539f85f3f2db759d758b10ae344883da" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial'>                 <b>Route 5</b><br>                 Distance: 13.75 km<br>                 Customers: 1<br>                 Total Demand: 150             </div>             </div>`)[0];
+                popup_d8ef62e121e8230db12ae8e9cc8b3b00.setContent(html_539f85f3f2db759d758b10ae344883da);
+            
+        
+
+        poly_line_a24cd6aff7f4585a55cb50f1babe5352.bindPopup(popup_d8ef62e121e8230db12ae8e9cc8b3b00)
+        ;
+
+        
+    
+    
+            feature_group_fef36fa3e4b32d7e6f2d8e56edbdbb95.addTo(map_4ede606470962af7ace4296c150e8bee);
+        
+    
+            var layer_control_ab2f5949cbabc8380637afba3698dc32_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_250856a98f1d73f210a91ad4c2eee241,
+                },
+                overlays :  {
+                    "Vehicle 0" : feature_group_7b295a05bc174d990670e90408787988,
+                    "Vehicle 1" : feature_group_096b33d261d6e128226ca3b8b79e1246,
+                    "Vehicle 2" : feature_group_e0f1c8968348185c99cfa80032379f1c,
+                    "Vehicle 3" : feature_group_5422183cb9a948b1d779c0ee85959817,
+                    "Vehicle 4" : feature_group_0d2a4e92ce8a861e1415e8abe43d879d,
+                    "Vehicle 5" : feature_group_fef36fa3e4b32d7e6f2d8e56edbdbb95,
+                },
+            };
+            let layer_control_ab2f5949cbabc8380637afba3698dc32 = L.control.layers(
+                layer_control_ab2f5949cbabc8380637afba3698dc32_layers.base_layers,
+                layer_control_ab2f5949cbabc8380637afba3698dc32_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4ede606470962af7ace4296c150e8bee);
+
+        
+</script>
+</html>

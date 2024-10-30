@@ -1,0 +1,159 @@
+{
+  "timestamp": "2024-10-30 17:19:10",
+  "total_optimization_time": 0.000427,
+  "total_routes": 6,
+  "total_customers": 6,
+  "total_distance": 238785.61965911463,
+  "routes": [
+    {
+      "vehicle_id": 0,
+      "num_customers": 1,
+      "total_distance": 61784.26298364111,
+      "total_demand": 350,
+      "improvement": 4.716381931911254,
+      "high_priority_customers": 1,
+      "customers": [
+        {
+          "id": 9,
+          "location": [
+            -32.0547,
+            115.9075
+          ],
+          "demand": 200,
+          "priority": 2,
+          "time_windows": [
+            [
+              "18:19:09",
+              "20:19:09"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle_id": 1,
+      "num_customers": 1,
+      "total_distance": 42269.61713757654,
+      "total_demand": 500,
+      "improvement": 0.0,
+      "high_priority_customers": 0,
+      "customers": [
+        {
+          "id": 1,
+          "location": [
+            -32.0569,
+            115.7439
+          ],
+          "demand": 200,
+          "priority": 1,
+          "time_windows": [
+            [
+              "18:19:09",
+              "20:19:09"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle_id": 2,
+      "num_customers": 1,
+      "total_distance": 62550.807314351994,
+      "total_demand": 450,
+      "improvement": 0.0,
+      "high_priority_customers": 0,
+      "customers": [
+        {
+          "id": 2,
+          "location": [
+            -31.8943,
+            115.7505
+          ],
+          "demand": 250,
+          "priority": 1,
+          "time_windows": [
+            [
+              "19:19:09",
+              "22:19:09"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle_id": 3,
+      "num_customers": 1,
+      "total_distance": 42191.19730050245,
+      "total_demand": 550,
+      "improvement": 0.0,
+      "high_priority_customers": 1,
+      "customers": [
+        {
+          "id": 3,
+          "location": [
+            -31.8915,
+            116.001
+          ],
+          "demand": 300,
+          "priority": 2,
+          "time_windows": [
+            [
+              "17:19:09",
+              "21:19:09"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle_id": 4,
+      "num_customers": 1,
+      "total_distance": 16235.485609089086,
+      "total_demand": 400,
+      "improvement": 0.0,
+      "high_priority_customers": 1,
+      "customers": [
+        {
+          "id": 6,
+          "location": [
+            -31.9714,
+            115.8971
+          ],
+          "demand": 250,
+          "priority": 2,
+          "time_windows": [
+            [
+              "19:19:09",
+              "22:19:09"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle_id": 5,
+      "num_customers": 1,
+      "total_distance": 13754.24931395346,
+      "total_demand": 150,
+      "improvement": 0,
+      "high_priority_customers": 0,
+      "customers": [
+        {
+          "id": 8,
+          "location": [
+            -31.9433,
+            115.9169
+          ],
+          "demand": 150,
+          "priority": 1,
+          "time_windows": [
+            [
+              "17:19:09",
+              "19:19:09"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

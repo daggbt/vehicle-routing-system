@@ -1,0 +1,268 @@
+2024-10-30 17:03:16,055 - VRS - INFO - Initializing VRS...
+2024-10-30 17:03:16,055 - VRS - INFO - Downloading map data...
+2024-10-30 17:03:36,609 - VRS - INFO - Map data downloaded and processed successfully
+2024-10-30 17:03:36,609 - VRS - INFO - Adding vehicles...
+2024-10-30 17:03:36,609 - VRS - INFO - Added vehicle 0
+2024-10-30 17:03:36,609 - VRS - INFO - Added vehicle 1
+2024-10-30 17:03:36,609 - VRS - INFO - Added vehicle 2
+2024-10-30 17:03:36,609 - VRS - INFO - Adding customers...
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 1
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 2
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 3
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 4
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 5
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 6
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 7
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 8
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 9
+2024-10-30 17:03:36,610 - VRS - INFO - Added customer 10
+2024-10-30 17:03:36,610 - VRS - INFO - Optimizing routes...
+2024-10-30 17:03:36,610 - VRS - INFO - Starting route optimization
+2024-10-30 17:03:36,610 - VRS - INFO - Generating initial solution using Clarke-Wright algorithm
+2024-10-30 17:03:36,610 - VRS - ERROR - Error in main execution: name 'timedelta' is not defined
+Traceback (most recent call last):
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/main.py", line 64, in main
+    optimized_routes = vrs.optimize_routes()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/routing_system.py", line 177, in optimize_routes
+    if self.check_time_window_feasibility(improved_route):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/routing_system.py", line 131, in check_time_window_feasibility
+    arrival_time = current_time + timedelta(minutes=travel_time)
+                                  ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+2024-10-30 17:05:42,541 - VRS - INFO - Initializing VRS...
+2024-10-30 17:05:42,541 - VRS - INFO - Downloading map data...
+2024-10-30 17:05:57,139 - VRS - INFO - Map data downloaded and processed successfully
+2024-10-30 17:05:57,139 - VRS - INFO - Adding vehicles...
+2024-10-30 17:05:57,140 - VRS - INFO - Added vehicle 0
+2024-10-30 17:05:57,140 - VRS - INFO - Added vehicle 1
+2024-10-30 17:05:57,140 - VRS - INFO - Added vehicle 2
+2024-10-30 17:05:57,140 - VRS - INFO - Adding customers...
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 1
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 2
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 3
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 4
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 5
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 6
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 7
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 8
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 9
+2024-10-30 17:05:57,140 - VRS - INFO - Added customer 10
+2024-10-30 17:05:57,140 - VRS - INFO - Optimizing routes...
+2024-10-30 17:05:57,140 - VRS - INFO - Starting route optimization
+2024-10-30 17:05:57,140 - VRS - INFO - Generating initial solution using Clarke-Wright algorithm
+2024-10-30 17:05:57,141 - VRS - INFO - Route optimization completed in 0.00 seconds
+2024-10-30 17:05:57,141 - VRS - INFO - Generating visualizations and reports...
+2024-10-30 17:05:57,436 - VRS - ERROR - Error in main execution: 'final_distance'
+Traceback (most recent call last):
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/main.py", line 82, in main
+    report = generate_report(
+             ^^^^^^^^^^^^^^^^
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/visualization.py", line 114, in generate_report
+    'total_distance': sum(route_statistics[i]['final_distance']
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dagmawi/projects/industrial_opt_projects/vehicle_routing_system/visualization.py", line 114, in <genexpr>
+    'total_distance': sum(route_statistics[i]['final_distance']
+                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'final_distance'
+2024-10-30 17:11:56,144 - VRS - INFO - Initializing VRS...
+2024-10-30 17:11:56,144 - VRS - INFO - Downloading map data...
+2024-10-30 17:12:10,275 - VRS - INFO - Map data downloaded and processed successfully
+2024-10-30 17:12:10,276 - VRS - INFO - Adding vehicles...
+2024-10-30 17:12:10,276 - VRS - INFO - Added vehicle 0
+2024-10-30 17:12:10,276 - VRS - INFO - Added vehicle 1
+2024-10-30 17:12:10,276 - VRS - INFO - Added vehicle 2
+2024-10-30 17:12:10,276 - VRS - INFO - Adding customers...
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 1
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 2
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 3
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 4
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 5
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 6
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 7
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 8
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 9
+2024-10-30 17:12:10,276 - VRS - INFO - Added customer 10
+2024-10-30 17:12:10,276 - VRS - INFO - Optimizing routes...
+2024-10-30 17:12:10,276 - VRS - INFO - Starting route optimization
+2024-10-30 17:12:10,276 - VRS - INFO - Generating initial solution using Clarke-Wright algorithm
+2024-10-30 17:12:10,277 - VRS - INFO - Route optimization completed in 0.00 seconds
+2024-10-30 17:12:10,277 - VRS - INFO - Generating visualizations and reports...
+2024-10-30 17:12:10,558 - VRS - INFO - 
+Optimization Summary:
+2024-10-30 17:12:10,558 - VRS - INFO - Total routes: 6
+2024-10-30 17:12:10,558 - VRS - INFO - Total optimization time: 0.00 seconds
+2024-10-30 17:12:10,558 - VRS - INFO - Average improvement: 0.79%
+2024-10-30 17:12:10,558 - VRS - INFO - 
+Detailed Route Information:
+2024-10-30 17:12:10,558 - VRS - INFO - 
+Route 0:
+2024-10-30 17:12:10,558 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,558 - VRS - INFO - Total distance: 61.78 km
+2024-10-30 17:12:10,558 - VRS - INFO - Stops:
+2024-10-30 17:12:10,558 - VRS - INFO -   - 9: Priority 2, Demand: 200
+2024-10-30 17:12:10,558 - VRS - INFO - 
+Route 1:
+2024-10-30 17:12:10,558 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,558 - VRS - INFO - Total distance: 42.27 km
+2024-10-30 17:12:10,558 - VRS - INFO - Stops:
+2024-10-30 17:12:10,558 - VRS - INFO -   - 1: Priority 1, Demand: 200
+2024-10-30 17:12:10,558 - VRS - INFO - 
+Route 2:
+2024-10-30 17:12:10,558 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,558 - VRS - INFO - Total distance: 62.55 km
+2024-10-30 17:12:10,559 - VRS - INFO - Stops:
+2024-10-30 17:12:10,559 - VRS - INFO -   - 2: Priority 1, Demand: 250
+2024-10-30 17:12:10,559 - VRS - INFO - 
+Route 3:
+2024-10-30 17:12:10,559 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,559 - VRS - INFO - Total distance: 42.19 km
+2024-10-30 17:12:10,559 - VRS - INFO - Stops:
+2024-10-30 17:12:10,559 - VRS - INFO -   - 3: Priority 2, Demand: 300
+2024-10-30 17:12:10,559 - VRS - INFO - 
+Route 4:
+2024-10-30 17:12:10,559 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,559 - VRS - INFO - Total distance: 16.24 km
+2024-10-30 17:12:10,559 - VRS - INFO - Stops:
+2024-10-30 17:12:10,559 - VRS - INFO -   - 6: Priority 2, Demand: 250
+2024-10-30 17:12:10,559 - VRS - INFO - 
+Route 5:
+2024-10-30 17:12:10,559 - VRS - INFO - Number of customers: 1
+2024-10-30 17:12:10,559 - VRS - INFO - Total distance: 13.75 km
+2024-10-30 17:12:10,559 - VRS - INFO - Stops:
+2024-10-30 17:12:10,559 - VRS - INFO -   - 8: Priority 1, Demand: 150
+2024-10-30 17:15:07,575 - VRS - INFO - Initializing VRS...
+2024-10-30 17:15:07,576 - VRS - INFO - Downloading map data...
+2024-10-30 17:17:17,013 - VRS - INFO - Initializing VRS...
+2024-10-30 17:17:17,013 - VRS - INFO - Downloading map data...
+2024-10-30 17:17:31,389 - VRS - INFO - Map data downloaded and processed successfully
+2024-10-30 17:17:31,389 - VRS - INFO - Adding vehicles...
+2024-10-30 17:17:31,389 - VRS - INFO - Added vehicle 0
+2024-10-30 17:17:31,389 - VRS - INFO - Added vehicle 1
+2024-10-30 17:17:31,389 - VRS - INFO - Added vehicle 2
+2024-10-30 17:17:31,389 - VRS - INFO - Adding customers...
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 1
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 2
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 3
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 4
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 5
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 6
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 7
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 8
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 9
+2024-10-30 17:17:31,390 - VRS - INFO - Added customer 10
+2024-10-30 17:17:31,390 - VRS - INFO - Optimizing routes...
+2024-10-30 17:17:31,390 - VRS - INFO - Starting route optimization
+2024-10-30 17:17:31,390 - VRS - INFO - Generating initial solution using Clarke-Wright algorithm
+2024-10-30 17:17:31,391 - VRS - INFO - Route optimization completed in 0.00 seconds
+2024-10-30 17:17:31,391 - VRS - INFO - Generating visualizations and reports...
+2024-10-30 17:17:31,668 - VRS - INFO - 
+Optimization Summary:
+2024-10-30 17:17:31,668 - VRS - INFO - Total routes: 6
+2024-10-30 17:17:31,668 - VRS - INFO - Total optimization time: 0.00 seconds
+2024-10-30 17:17:31,668 - VRS - INFO - Average improvement: 0.79%
+2024-10-30 17:17:31,668 - VRS - INFO - 
+Detailed Route Information:
+2024-10-30 17:17:31,668 - VRS - INFO - 
+Route 0:
+2024-10-30 17:17:31,668 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,668 - VRS - INFO - Total distance: 61.78 km
+2024-10-30 17:17:31,668 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 9: Priority 2, Demand: 200
+2024-10-30 17:17:31,669 - VRS - INFO - 
+Route 1:
+2024-10-30 17:17:31,669 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,669 - VRS - INFO - Total distance: 42.27 km
+2024-10-30 17:17:31,669 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 1: Priority 1, Demand: 200
+2024-10-30 17:17:31,669 - VRS - INFO - 
+Route 2:
+2024-10-30 17:17:31,669 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,669 - VRS - INFO - Total distance: 62.55 km
+2024-10-30 17:17:31,669 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 2: Priority 1, Demand: 250
+2024-10-30 17:17:31,669 - VRS - INFO - 
+Route 3:
+2024-10-30 17:17:31,669 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,669 - VRS - INFO - Total distance: 42.19 km
+2024-10-30 17:17:31,669 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 3: Priority 2, Demand: 300
+2024-10-30 17:17:31,669 - VRS - INFO - 
+Route 4:
+2024-10-30 17:17:31,669 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,669 - VRS - INFO - Total distance: 16.24 km
+2024-10-30 17:17:31,669 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 6: Priority 2, Demand: 250
+2024-10-30 17:17:31,669 - VRS - INFO - 
+Route 5:
+2024-10-30 17:17:31,669 - VRS - INFO - Number of customers: 1
+2024-10-30 17:17:31,669 - VRS - INFO - Total distance: 13.75 km
+2024-10-30 17:17:31,669 - VRS - INFO - Stops:
+2024-10-30 17:17:31,669 - VRS - INFO -   - 8: Priority 1, Demand: 150
+2024-10-30 17:18:56,017 - VRS - INFO - Initializing VRS...
+2024-10-30 17:18:56,017 - VRS - INFO - Downloading map data...
+2024-10-30 17:19:09,971 - VRS - INFO - Map data downloaded and processed successfully
+2024-10-30 17:19:09,972 - VRS - INFO - Adding vehicles...
+2024-10-30 17:19:09,972 - VRS - INFO - Added vehicle 0
+2024-10-30 17:19:09,972 - VRS - INFO - Added vehicle 1
+2024-10-30 17:19:09,972 - VRS - INFO - Added vehicle 2
+2024-10-30 17:19:09,972 - VRS - INFO - Adding customers...
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 1
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 2
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 3
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 4
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 5
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 6
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 7
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 8
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 9
+2024-10-30 17:19:09,972 - VRS - INFO - Added customer 10
+2024-10-30 17:19:09,972 - VRS - INFO - Optimizing routes...
+2024-10-30 17:19:09,972 - VRS - INFO - Starting route optimization
+2024-10-30 17:19:09,972 - VRS - INFO - Generating initial solution using Clarke-Wright algorithm
+2024-10-30 17:19:09,973 - VRS - INFO - Route optimization completed in 0.00 seconds
+2024-10-30 17:19:09,973 - VRS - INFO - Generating visualizations and reports...
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Optimization Summary:
+2024-10-30 17:19:10,262 - VRS - INFO - Total routes: 6
+2024-10-30 17:19:10,262 - VRS - INFO - Total optimization time: 0.00 seconds
+2024-10-30 17:19:10,262 - VRS - INFO - Average improvement: 0.79%
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Detailed Route Information:
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Route 0:
+2024-10-30 17:19:10,262 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,262 - VRS - INFO - Total distance: 61.78 km
+2024-10-30 17:19:10,262 - VRS - INFO - Stops:
+2024-10-30 17:19:10,262 - VRS - INFO -   - 9: Priority 2, Demand: 200
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Route 1:
+2024-10-30 17:19:10,262 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,262 - VRS - INFO - Total distance: 42.27 km
+2024-10-30 17:19:10,262 - VRS - INFO - Stops:
+2024-10-30 17:19:10,262 - VRS - INFO -   - 1: Priority 1, Demand: 200
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Route 2:
+2024-10-30 17:19:10,262 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,262 - VRS - INFO - Total distance: 62.55 km
+2024-10-30 17:19:10,262 - VRS - INFO - Stops:
+2024-10-30 17:19:10,262 - VRS - INFO -   - 2: Priority 1, Demand: 250
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Route 3:
+2024-10-30 17:19:10,262 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,262 - VRS - INFO - Total distance: 42.19 km
+2024-10-30 17:19:10,262 - VRS - INFO - Stops:
+2024-10-30 17:19:10,262 - VRS - INFO -   - 3: Priority 2, Demand: 300
+2024-10-30 17:19:10,262 - VRS - INFO - 
+Route 4:
+2024-10-30 17:19:10,262 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,263 - VRS - INFO - Total distance: 16.24 km
+2024-10-30 17:19:10,263 - VRS - INFO - Stops:
+2024-10-30 17:19:10,263 - VRS - INFO -   - 6: Priority 2, Demand: 250
+2024-10-30 17:19:10,263 - VRS - INFO - 
+Route 5:
+2024-10-30 17:19:10,263 - VRS - INFO - Number of customers: 1
+2024-10-30 17:19:10,263 - VRS - INFO - Total distance: 13.75 km
+2024-10-30 17:19:10,263 - VRS - INFO - Stops:
+2024-10-30 17:19:10,263 - VRS - INFO -   - 8: Priority 1, Demand: 150
